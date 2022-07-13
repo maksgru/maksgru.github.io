@@ -10,16 +10,12 @@ const SearchPanel: React.FC = () => {
     dispatch(getItems(target.value));
   };
 
-  const handleSpinnerChange = () => {
-    console.log('spiner')
-  }
-
   const debouncedChangeHandler = useCallback(
     debounce(handleSearchChange, 1000)
     , [dispatch]);
 
   return (
-    <Box mx="auto" width="70%" mt={4} onChange={handleSpinnerChange}>
+    <Box mx="auto" width="70%" mt={4}>
       <TextField
         name="search"
         placeholder="search"
@@ -27,7 +23,6 @@ const SearchPanel: React.FC = () => {
         margin="normal"
         size="small"
         onChange={debouncedChangeHandler}
-        // value={searchValue}
         fullWidth
       />
     </Box>
