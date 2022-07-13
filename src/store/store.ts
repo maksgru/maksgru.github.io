@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import profileReducer from './reducers/profile-slice';
+import swapiItemsReducer from './reducers/swapi-items-slice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    profile: profileReducer,
+    swapiItems: swapiItemsReducer
   },
 });
 
