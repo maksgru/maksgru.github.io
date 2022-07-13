@@ -1,6 +1,6 @@
 {
   "name": "swapi-search",
-  "homepage": "http://maksgru.github.io/swapi-search",
+  "homepage": "http://maksgru.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
